@@ -8,7 +8,8 @@ def run_guessing_game
     if user_input == "exit"
       puts "Goodbye!"
       break
-    elsif user_input
+    elsif a.include?(user_input.to_i)
+    
     end
     puts "You guessed the correct number!"
     puts "The computer guessed #{random_num}."
