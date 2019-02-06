@@ -9,9 +9,11 @@ def run_guessing_game
       puts "Goodbye!"
       break
     elsif a.include?(user_input.to_i)
-      
+      if user_input.to_i == random_num
+        puts "You guessed the correct number!"
+      else
+        puts "The computer guessed #{random_num}."
+      end
     end
-    puts "You guessed the correct number!"
-    puts "The computer guessed #{random_num}."
   end
 end
